@@ -113,7 +113,7 @@ User.findOne({ 'local.email' : email }, function(err, user) {
     return done(null, user);
     });
 }));
-})();
+})(passport);
 
 // development only
 if ('development' == app.get('env')) {
